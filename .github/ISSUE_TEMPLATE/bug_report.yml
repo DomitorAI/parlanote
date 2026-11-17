@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a problem with Parlanote (installing, a screen, the voice, translation, sharing a list, printing).
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Opened the notebook ...
+        2. Tapped ...
+        3. ...
+    validations:
+      required: false
+  - type: input
+    id: env
+    attributes:
+      label: Device
+      placeholder: Parlanote version (Settings → About Parlanote), Windows or Android version, phone model
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag an image here. Make sure it shows nothing private.
+    validations:
+      required: false

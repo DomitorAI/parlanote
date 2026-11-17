@@ -1,0 +1,47 @@
+name: Wish or feature request
+description: Tell us what you need — a feature, a language, an improvement for your lessons or your class.
+title: "[Wish] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Parlanote grows from what its users need. Thank you for taking a minute!
+  - type: dropdown
+    id: who
+    attributes:
+      label: You use Parlanote as…
+      options:
+        - A student
+        - A teacher
+        - Learning on my own
+        - For travel or work abroad
+        - Other
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do?
+      description: What are you trying to do today, and what is missing or hard?
+      placeholder: e.g. I want to send my class a list with pictures…
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How should it work?
+      description: Your idea, in your own words.
+    validations:
+      required: false
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      multiple: true
+      options:
+        - Windows
+        - Android
+        - Both
+    validations:
+      required: false
